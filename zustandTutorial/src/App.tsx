@@ -1,11 +1,9 @@
-import Calculator from "./miniProjects/Calculator";
+import React from 'react'
 
 const App = () => {
   return (
-    <div>
-      <Calculator />
-    </div>
-  );
-};
+    <div>App</div>
+  )
+}
 
-export default App;
+export default App
