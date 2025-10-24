@@ -1,12 +1,9 @@
-import Counter from "./miniProjects/Counter";
-import TodoList from "./miniProjects/TodoList";
-// import TodoList from "./miniProjects/TodoList";
+import Calculator from "./miniProjects/Calculator";
 
 const App = () => {
   return (
     <div>
-      <Counter />
-      <TodoList />
+      <Calculator />
     </div>
   );
 };
