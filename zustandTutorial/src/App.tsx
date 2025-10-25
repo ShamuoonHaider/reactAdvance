@@ -1,9 +1,11 @@
-import React from 'react'
+import ProductsList from "./miniProjects/ProductsList";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <ProductsList />
+    </div>
+  );
+};
 
-export default App
+export default App;
