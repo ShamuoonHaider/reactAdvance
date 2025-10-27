@@ -1,10 +1,11 @@
-import React from "react";
-import Counter from "./features/counter/Counter";
+import ProductsList from "./features/cart/ProductsList";
+import { Cart } from "./features/cart/Cart";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      <ProductsList />
+      <Cart />
     </div>
   );
 };

@@ -31,7 +31,7 @@ export const Cart = () => {
             <div className="space-y-4">
               {items.map((item, index) => (
                 <div
-                  key={`${item.id}-${index}`}
+                  key={item.id}
                   className="border-b pb-4 flex gap-4 items-center"
                 >
                   <img
