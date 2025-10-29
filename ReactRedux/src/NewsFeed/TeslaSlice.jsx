@@ -5,7 +5,7 @@ export const fetchTeslaData = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const response = await fetch(
-        "https://newsapi.org/v2/everything?q=tesla&from=2025-09-28&sortBy=publishedAt&apiKey=59da39ae8c8e415085e08bda8d9d9af1"
+        "https://newsapi.org/v2/everything?q=tesla&from=2025-09-29&sortBy=publishedAt&apiKey=59da39ae8c8e415085e08bda8d9d9af1"
       );
       if (!response.ok) {
         throw new Error("Failed to fetch tesla news");
