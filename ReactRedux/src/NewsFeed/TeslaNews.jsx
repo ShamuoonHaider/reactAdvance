@@ -17,7 +17,6 @@ const TeslaNews = () => {
 
   return (
     <div>
-      <h2>Tesla News ({articles?.length || 0} articles)</h2>
       {articles && articles.length > 0 ? (
         articles.map((item) => (
           <div
@@ -32,7 +31,7 @@ const TeslaNews = () => {
             <p>Author: {item.author || "Unknown"}</p>
             <p>{item.description || "No description"}</p>
             <a href={item.url} target="_blank" className="text-blue-500">
-              <img src={item.urlToImage} alt="" />
+              <img src={item.urlToImage} alt={item.title} />
               {item.url}
             </a>
             <p>{item.content}</p>
