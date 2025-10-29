@@ -1,12 +1,10 @@
-import ProductsList from "./features/cart/ProductsList";
-import { Cart } from "./features/cart/Cart";
+import Header from "./NewsFeed/components/Header";
 
 const App = () => {
   return (
-    <div>
-      <ProductsList />
-      <Cart />
-    </div>
+    <>
+      <Header />
+    </>
   );
 };
 
