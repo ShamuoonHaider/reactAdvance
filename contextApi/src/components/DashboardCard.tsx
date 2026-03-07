@@ -1,3 +1,3 @@
 export const DashboardCard = () => {
-  return <div>Dashboard Card</div>;
+  return <div className="mx-5">Dashboard Card</div>;
 };

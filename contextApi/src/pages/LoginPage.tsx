@@ -1,6 +1,6 @@
 const LoginPage = () => {
   return (
-    <div>
+    <div className="mx-5">
       <h1>Login Page</h1>
       <form action="" method="post">
         <input type="text" placeholder="Username" />

@@ -1,20 +1,24 @@
-import { useContext } from "react";
 import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
-import { AuthContext, AuthProvider } from "./context/AuthContext";
-import { ThemeProvider } from "./context/ThemeContext";
 import Dashboard from "./pages/Dashboard";
 import LoginPage from "./pages/LoginPage";
+import { useState } from "react";
+import Home from "./pages/Home";
 
 const App = () => {
-  const { user, setUser } = useContext(AuthContext);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
-    <ThemeProvider>
-      <AuthProvider>
-        <Navbar />
-        {user ? <Dashboard /> : <LoginPage />}
-      </AuthProvider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<LoginPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
